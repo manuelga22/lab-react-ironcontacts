@@ -46,12 +46,14 @@ class App extends Component {
   addRandomContact = () => {
     
     let random = Math.floor(Math.random() * 200);
-    // for(let a = 0;a<this.randomsUsed.length;a++){
-    //   if(random == this.randomsUsed[a]){
-    //     this.addRandomContact();
-    //   }
-    // }
-    // this.randomsUsed.push(random);
+    for(let a = 0;a<this.randomsUsed.length;a++){//don't repeat the same celebrity
+      if(random == this.randomsUsed[a]){
+        console.log('here')
+        this.addRandomContact();
+      }
+    }
+    this.randomsUsed.push(random);
+
     console.log(this.randomsUsed);
     console.log(this.randomsUsed.length);
     this.celebs.unshift(Contacts[random]);
