@@ -1,0 +1,28 @@
+.movieCard > img{
+  width: 100px;
+  height: 120px;
+  border:solid;
+}
+.movieCard{
+  display:flex;
+  justify-content: space-around;
+  margin: 10px 0px;
+
+}
+.movieCard> button{
+  width:100px;
+  height:40px
+}
+#tableOfContacts{
+
+  text-decoration: none;
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+}
+#tableOfContacts > ul{
+  list-style: none;
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+}
